@@ -14,7 +14,7 @@
         <li class="main-nav__item">
           <a class="main-nav__logo" href="index.html">
             <img class="main-nav__logo-image" src="https://via.placeholder.com/191x38" width="191" height="38"
-              alt="Логотипа cat energy, который ведёт на главную страницу">
+              alt="Логотип cat energy, который ведёт на главную страницу">
           </a>
         </li>
         <li class="main-nav__item">
@@ -29,7 +29,94 @@
       </ul>
     </nav>
   </header>
+  <main class="page-main">
+    <h1 class="page-main__title">Подбор программы</h1>
+    <section class="filter">
+      <h2 class="filter__title">Заполните анкету и мы подберем
+        программу питания для вашего кота</h2>
+      <form class="filter__form" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="filter__info filter-info">
+          <legend class="visually-hidden">Информация о коте</legend>
+          <label class="filter-info__label">
+            Имя:*
+            <input class="filter-info__input" type="text" name="name" placeholder="Барсик" aria-label="Барсик">
+          </label>
+          <label class="filter-info__label">
+            Вес (кг):*
+            <input class="filter-info__input" type="text" name="weight" placeholder="7" aria-label="7">
+          </label>
+          <label class="filter-info__label">
+            Возраст (лет):
+            <input class="filter-info__input" type="text" name="age" placeholder="7" aria-label="7">
+          </label>
+        </fieldset>
+        <fieldset class="filter__need filter-need">
+          <legend class="visually-hidden">Что нужно вашему коту?</legend>
+          <label class="filter-need__label">
+            <input class="filter-need__input" type="radio" name="cat-wants" value="losing-weight" checked>
+            Похудение
+          </label>
+          <label class="filter-need__label">
+            <input class="filter-need__input" type="radio" name="cat-wants" value="obesity">
+            Набор массы
+          </label>
+          <label class="filter-need__label">
+            <input class="filter-need__input" type="radio" name="cat-wants" value="advice">
+            Не знаю (Нужен ваш совет)
+          </label>
+        </fieldset>
+        <fieldset class="filter__contacts filter-contacts">
+          <legend class="filter-contacts__legend">Контактные данные(владельца кота)</legend>
+          <label class="filter-contacts__label">
+            E-mail:*
+            <input class="filter-contacts__input" type="text" name="e-mail" placeholder="kuklachev@gmail.com"
+              aria-label="kuklachev@gmail.com">
+          </label>
+          <label class="filter-contacts__label">
+            Телефон:*
+            <input class="filter-contacts__input" type="text" name="tel" placeholder="8 (960) 900-60-90"
+              aria-label="8 (960) 900-60-90">
+          </label>
+        </fieldset>
+        <fieldset class="filter__comment filter-comment">
+          <legend class="filter-comment__legend">Комментарий</legend>
+          <textarea class="filter-comment__textarea" name="comment" placeholder="Расскажите обо всех повадках кота"
+            aria-label="Расскажите обо всех повадках кота"></textarea>
+        </fieldset>
+        <fieldset class="filter__additionally filter-additionally">
+          <legend class="filter-additionally__legend">Дополнительно</legend>
+          <label class="filter-additionally__label">
+            <input class="filter-additionally__input" type="checkbox" name="sweetener">
+            Сахарозаменитель
+          </label>
+          <label class="filter-additionally__label">
+            <input class="filter-additionally__input" type="checkbox" name="water">
+            Питьевая вода
+          </label>
+          <label class="filter-additionally__label">
+            <input class="filter-additionally__input" type="checkbox" name="milk">
+            Молоко
+          </label>
+          <label class="filter-additionally__label" for="vitamins">
+            <input class="filter-additionally__input" type="checkbox" name="vitamins" id="vitamins">
+            Витамины
+          </label>
+        </fieldset>
+        <button class="filter__button" type="submit">Отправить заявку</button>
+      </form>
+      <p class="filter__text">* — Обязательные поля</p>
+    </section>
+  </main>
   <footer class="page-footer">
+    <section class="contacts">
+      <h2 class="visually-hidden">Наши контакты</h2>
+      <b class="contacts__text">приглашаем к сотрудничеству дилеров!</b>
+      <p class="contacts__contacts">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <p class="contacts__map">
+        <img class="contacts__map-image" src="https://via.placeholder.com/320x400" width="320" height="400"
+          alt="Изображение карты по адресу Доходный дом Н.А.Мельцева">
+      </p>
+    </section>
     <a class="page-fooger__logo" href="index.html">
       <img class="page-fooger__logo-image" src="https://via.placeholder.com/128x24" width="101" height="18"
         alt="Текст логотипа cat energy, который ведёт на главную страницу">
@@ -50,3 +137,4 @@
 </body>
 
 </html>
+
