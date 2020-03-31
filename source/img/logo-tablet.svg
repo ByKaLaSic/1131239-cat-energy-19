@@ -5,15 +5,19 @@
     .st0 {
       fill: #FDC305;
     }
+
     .st1 {
       fill: #F06351;
     }
+
     .st2 {
       fill: #E55645;
     }
+
     .st3 {
       fill: #111111;
     }
+
     .st4 {
       fill: #444444;
     }
