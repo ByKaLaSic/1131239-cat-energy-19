@@ -1,5 +1,5 @@
 .page-header__container {
-  .phone-container();
+  .phone-container(0 0);
 }
 
 @media (min-width: 768px) {
@@ -12,11 +12,14 @@
 
   .page-header__container {
     .desktop-container(0 110px);
+  }
+
+  .page-header__container--cat {
     background: url("../img/index-background-desktop@1x.jpg") no-repeat 100%;
     min-height: 696px;
   }
 
-  .page-header {
+  .page-header--gradient {
     background: linear-gradient(to right, #ffffff 0%, #ffffff 50%, #64a83b 50%, #64a83b 100%);
   }
 }
