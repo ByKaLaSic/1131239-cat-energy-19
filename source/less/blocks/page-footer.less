@@ -39,3 +39,35 @@
 .page-footer__container {
   .phone-container(0 20px);
 }
+
+@media (min-width: 768px) {
+
+  .page-footer__container {
+    .tablet-container(0 30px);
+  }
+
+  .page-footer__lower-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-footer__list {
+    border-bottom: none;
+  }
+
+  .page-footer__logo {
+    border-bottom: none;
+  }
+
+  .page-footer__copyright {
+    padding: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+
+  .page-footer__container {
+    .desktop-container(0 110px);
+  }
+}
+

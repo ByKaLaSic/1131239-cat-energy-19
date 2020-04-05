@@ -19,3 +19,45 @@
 .job__container {
   .phone-container(0 20px);
 }
+
+@media (min-width: 768px) {
+
+  .job__container {
+    .tablet-container(0 30px);
+  }
+
+  .job__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .job__item {
+    width: 50%;
+  }
+
+  .job__text {
+    margin: 0;
+    margin-top: 80px;
+    padding-right: 150px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .job__container {
+    .desktop-container(0 110px);
+  }
+
+  .job__list {
+    justify-content: space-between;
+    padding-top: 80px;
+  }
+
+  .job__item {
+    width: 245px;
+  }
+
+  .job__text {
+    margin: 0;
+    padding: 0;
+  }
+}

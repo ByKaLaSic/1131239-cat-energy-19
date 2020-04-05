@@ -1,3 +1,22 @@
 .page-header__container {
   .phone-container();
 }
+
+@media (min-width: 768px) {
+  .page-header__container {
+    .tablet-container(0 30px);
+  }
+}
+
+@media (min-width: 1440px) {
+
+  .page-header__container {
+    .desktop-container(0 110px);
+    background: url("../img/index-background-desktop@1x.jpg") no-repeat 100%;
+    min-height: 696px;
+  }
+
+  .page-header {
+    background: linear-gradient(to right, #ffffff 0%, #ffffff 50%, #64a83b 50%, #64a83b 100%);
+  }
+}

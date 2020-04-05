@@ -44,12 +44,42 @@
   color: #111111;
   border-bottom: 1px solid #e6e6e6;
   text-align: center;
-  padding: 0 20px;
-  padding-top: 22px;
-  padding-bottom: 23px;
+  padding: 22px 20px 23px 20px;
   text-transform: uppercase;
 }
 
 @media (min-width: 768px) {
-  
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-nav__logo {
+    border-bottom: none;
+    padding-left: 0;
+  }
+
+  .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav__link {
+    .regular-Oswald();
+    font-size: 18px;
+    line-height: 25px;
+    color: #222222;
+    border-bottom: none;
+    padding: 22px 10px 23px 10px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main-nav__link {
+    color: #ffffff;
+  }
 }
