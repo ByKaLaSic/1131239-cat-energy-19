@@ -3,3 +3,25 @@
   padding: 0;
   list-style: none;
 }
+
+.product__container {
+  .phone-container(0 20px);
+}
+
+@media (min-width: 768px) {
+
+  .product__container {
+    .tablet-container(0 30px);
+  }
+
+  .product__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 100px;
+  }
+
+  .product__item {
+    margin-bottom: 100px;
+  }
+}
