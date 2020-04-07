@@ -2,20 +2,47 @@
   padding-bottom: 20px;
 }
 
-.additionally__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 .additionally__present {
   width: 280px;
   height: 289px;
   background: url("../img/gift-photo-mobile@1x.jpg") no-repeat;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
 .additionally__text {
   color: #ffffff;
   font-size: 16px;
   line-height: 20px;
+}
+
+.additionally__container {
+  .phone-container(0 20px);
+}
+
+@media (min-width: 768px) {
+  .additionally__container {
+    .tablet-container(0 30px);
+  }
+
+  .additionally__title {
+    margin-left: 38px;
+  }
+
+  .additionally__present {
+    background: url("../img/gift-photo-tablet@1x.jpg") no-repeat;
+    width: 708px;
+    height: 200px;
+  }
+
+  .additionally__present-container {
+    .tablet-container(0 30px);
+    background-color: #6aab43;
+  }
+}
+
+@media (min-width: 1440px) {
+  .additionally__container {
+    .desktop-container(0 110px);
+  }
 }
