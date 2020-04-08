@@ -13,9 +13,9 @@
     <div class="page-header__container">
       <nav class="main-nav">
         <a class="main-nav__logo" href="index.html">
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            x="0px" y="0px" width="191" height="38" viewBox="0 0 190.4 37.6"
-            style="enable-background: new 0 0 190.4 37.6;" xml:space="preserve">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            y="0px" width="191" height="38" viewBox="0 0 190.4 37.6" style="enable-background: new 0 0 190.4 37.6;"
+            xml:space="preserve">
             <style type="text/css">
               .st0 {
                 fill: #FDC305;
@@ -94,18 +94,26 @@
         <form class="filter__form" action="https://echo.htmlacademy.ru" method="POST">
           <fieldset class="filter__info filter__fieldset">
             <legend class="visually-hidden">Информация о коте</legend>
-            <label class="filter__label">
-              Имя:*
-              <input class="filter__input" type="text" name="name" placeholder="Барсик" aria-label="Барсик" required>
-            </label>
-            <label class="filter__label">
-              Вес (кг):*
-              <input class="filter__input" type="text" name="weight" placeholder="7" aria-label="7" required>
-            </label>
-            <label class="filter__label">
-              Возраст (лет):
-              <input class="filter__input" type="text" name="age" placeholder="7" aria-label="7">
-            </label>
+            <div class="filter__wrapper-input">
+              <label class="filter__label" for="name">
+                Имя:*
+              </label>
+              <input class="filter__input" type="text" name="name" placeholder="Барсик" aria-label="Барсик" id="name"
+                required>
+            </div>
+            <div class="filter__wrapper-input">
+              <label class="filter__label" for="weight">
+                Вес (кг):*
+              </label>
+              <input class="filter__input" type="text" name="weight" placeholder="7" aria-label="7" id="weight"
+                required>
+            </div>
+            <div class="filter__wrapper-input">
+              <label class="filter__label" for="years">
+                Возраст (лет):
+              </label>
+              <input class="filter__input" type="text" name="age" placeholder="7" aria-label="7" id="years">
+            </div>
           </fieldset>
           <fieldset class="filter__need filter__fieldset">
             <legend class="visually-hidden">Что нужно вашему коту?</legend>
@@ -124,16 +132,20 @@
           </fieldset>
           <fieldset class="filter__contacts filter__fieldset">
             <legend class="filter__legend popular-title">Контактные данные(владельца кота)</legend>
-            <label class="filter__label">
-              E-mail:*
+            <div class="filter__wrapper-input">
+              <label class="filter__label" for="e-mail">
+                E-mail:*
+              </label>
               <input class="filter__input" type="email" name="e-mail" placeholder="kuklachev@gmail.com"
-                aria-label="kuklachev@gmail.com" required>
-            </label>
-            <label class="filter__label">
-              Телефон:*
+                aria-label="kuklachev@gmail.com" id="e-mail" required>
+            </div>
+            <div class="filter__wrapper-input">
+              <label class="filter__label" for="tel">
+                Телефон:*
+              </label>
               <input class="filter__input" type="tel" name="tel" placeholder="8 (960) 900-60-90"
-                aria-label="8 (960) 900-60-90" required>
-            </label>
+                aria-label="8 (960) 900-60-90" id="tel" required>
+            </div>
           </fieldset>
           <fieldset class="filter__comment filter__fieldset">
             <legend class="filter__legend popular-title">Комментарий</legend>
@@ -143,22 +155,24 @@
           </fieldset>
           <fieldset class="filter__additionally filter__fieldset">
             <legend class="filter__legend popular-title">Дополнительно</legend>
-            <label class="filter__label">
-              <input class="filter__input" type="checkbox" name="sweetener" checked>
-              Сахарозаменитель
-            </label>
-            <label class="filter__label">
-              <input class="filter__input" type="checkbox" name="water">
-              Питьевая вода
-            </label>
-            <label class="filter__label">
-              <input class="filter__input" type="checkbox" name="milk">
-              Молоко
-            </label>
-            <label class="filter__label" for="vitamins">
-              <input class="filter__input" type="checkbox" name="vitamins" id="vitamins">
-              Витамины
-            </label>
+            <div class="filter__wrapper-checkbox">
+              <label class="filter__label">
+                <input class="filter__input" type="checkbox" name="sweetener" checked>
+                Сахарозаменитель
+              </label>
+              <label class="filter__label">
+                <input class="filter__input" type="checkbox" name="water">
+                Питьевая вода
+              </label>
+              <label class="filter__label">
+                <input class="filter__input" type="checkbox" name="milk">
+                Молоко
+              </label>
+              <label class="filter__label" for="vitamins">
+                <input class="filter__input" type="checkbox" name="vitamins" id="vitamins">
+                Витамины
+              </label>
+            </div>
           </fieldset>
           <button class="filter__button popular-link" type="submit">Отправить заявку</button>
         </form>
@@ -168,7 +182,7 @@
   </main>
   <footer class="page-footer">
     <section class="contacts">
-      <div class="contacts__container">
+      <div class="container contacts__starting-point">
         <h2 class="visually-hidden">Наши контакты</h2>
         <div class="contacts__wrapper-content">
           <b class="contacts__text">приглашаем к сотрудничеству дилеров!</b>
@@ -183,9 +197,9 @@
     <div class="page-footer__wrapper">
       <div class="page-footer__container">
         <a class="page-footer__logo">
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            x="0px" y="0px" width="121" height="18" viewBox="0 0 127.8 23.4"
-            style="enable-background:new 0 0 127.8 23.4;" xml:space="preserve">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            y="0px" width="121" height="18" viewBox="0 0 127.8 23.4" style="enable-background:new 0 0 127.8 23.4;"
+            xml:space="preserve">
             <style type="text/css">
               .st0 {
                 fill: #111111;

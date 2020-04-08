@@ -32,3 +32,23 @@
   line-height: 16px;
   color: #444444;
 }
+
+.filter__input:not([type="checkbox"]):not([type="radio"]) {
+  width: 100%;
+}
+
+.filter__wrapper-input {
+  display: flex;
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .filter__wrapper-checkbox {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .filter__additionally .filter__label {
+    width: 50%;
+  }
+}
