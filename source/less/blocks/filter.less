@@ -31,6 +31,7 @@
   font-size: 14px;
   line-height: 16px;
   color: #444444;
+  text-align: center;
 }
 
 .filter__input:not([type="checkbox"]):not([type="radio"]) {
@@ -42,6 +43,10 @@
   margin-top: 10px;
 }
 
+.filter__textarea {
+  width: 100%;
+}
+
 @media (min-width: 768px) {
   .filter__wrapper-checkbox {
     display: flex;
@@ -49,6 +54,38 @@
   }
 
   .filter__additionally .filter__label {
+    width: 50%;
+  }
+
+  .filter__bottom-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .filter__text {
+    text-align: start;
+  }
+}
+
+@media (min-width: 1300px) {
+  .filter__additionally .filter__label {
+    width: 25%;
+  }
+
+  .filter__top-wrapper {
+    display: flex;
+  }
+
+  .filter__info,
+  .filter__need {
+    width: 50%;
+  }
+
+  .filter__middle-wrapper {
+    display: flex;
+  }
+
+  .filter__contacts .filter__wrapper-input {
     width: 50%;
   }
 }
