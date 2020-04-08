@@ -1,5 +1,15 @@
-.product__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.product__container {
+  .phone-container(0 20px);
+}
+
+@media (min-width: 768px) {
+  .product__container {
+    .tablet-container(0 30px);
+  }
+}
+
+@media (min-width: 1440px) {
+  .product__container {
+    .desktop-container(0 110px);
+  }
 }

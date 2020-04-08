@@ -1,5 +1,5 @@
 .contacts {
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 .contacts__text {
@@ -7,17 +7,51 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  width: 127px;
 }
 
 .contacts__contacts {
+  margin: 0;
   color: #444444;
   font-size: 14px;
   line-height: 20px;
   font-family: "Arial", "Helvetica", sans-serif;
+  width: 135px;
+}
+
+.contacts__wrapper-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
 }
 
 .contacts__map {
   margin: 0;
   width: 320px;
   height: 400px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .contacts__wrapper-content {
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .contacts .contacts__starting-point {
+    position: relative;
+  }
+
+  .contacts__wrapper-content {
+    position: absolute;
+    width: 570px;
+    padding: 50px 91px 50px 77px;
+    background-color: white;
+    z-index: 20;
+    left: 160px;
+    top: 120px;
+  }
 }
