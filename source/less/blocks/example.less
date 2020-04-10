@@ -21,16 +21,68 @@
   font-size: 12px;
   line-height: 12px;
   font-family: "Arial", "Helvetica", sans-serif;
+  margin: 0;
 }
 
 .example__liberation {
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .example__range {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
+}
+
+.example__was,
+.example__become {
+  width: 320px;
+  height: 240px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.example__become {
+  display: none;
+}
+
+.example__description-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .example {
+    background-color: white;
+  }
+
+  .example__wrapper-min {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .example__liberation {
+    width: 130px;
+    text-align: right;
+  }
+
+  .example__image-infinity {
+    background-color: #eaeaea;
+  }
+}
+
+@media (min-width: 1300px) {
+  .example__common-infinity {
+    background-color: #eaeaea;
+  }
+
+  .example__container {
+    margin: 0 auto;
+    max-width: 1300px;
+    display: flex;
+  }
 }
