@@ -53,6 +53,12 @@
     display: none;
   }
 
+  .main-nav__list {
+    flex-wrap: wrap;
+    width: 70.62%;
+    justify-content: flex-end;
+  }
+
   .main-nav {
     display: flex;
     justify-content: space-between;
@@ -61,9 +67,8 @@
 
   .main-nav__logo {
     border-bottom: none;
-    padding-left: 0;
-    padding-top: 0;
     margin-top: -10px;
+    padding: 0;
   }
 
   .main-nav__list {
@@ -77,7 +82,11 @@
     color: #222222;
     border-bottom: none;
     padding: 0;
-    padding-left: 36px;
+    white-space: nowrap;
+  }
+
+  .main-nav__item {
+    margin-left: 7.2%;
   }
 }
 

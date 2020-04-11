@@ -37,7 +37,6 @@
   line-height: 37px;
   text-transform: uppercase;
   margin-left: 71px;
-  padding-right: 10px;
 }
 
 .opportunities-list__text {
@@ -98,17 +97,68 @@
   }
 
   .opportunities-list__item {
-    padding-left: 40px;
-    padding-right: 275px;
+    padding-left: 53px;
+    padding-top: 76px;
+    padding-right: 38.84%;
+    margin-top: 30px;
+
+    &::before {
+      width: 200px;
+      height: 200px;
+      top: 92px;
+      right: 62px;
+      left: auto;
+    }
+  }
+
+  .opportunities-list__item--losing-weight::after {
+    width: 140px;
+    height: 194px;
+    left: auto;
+    top: 80px;
+    right: 92px;
   }
 
   .opportunities-list__link {
-    margin-top: 40px;
-    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 56px;
+    margin-left: -1px;
+    margin-bottom: 40px;
+
+    &::after {
+      margin-top: 5px;
+      margin-left: 24px;
+    }
   }
 
   .opportunities-list__text::after {
     display: none;
+  }
+
+  .opportunities-list__text {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 25px;
+    margin-left: -1px;
+  }
+
+  .opportunities-list__item--obesity {
+    padding-right: 44.49%;
+
+    &::before {
+      left: auto;
+      top: 91px;
+      right: 60px;
+    }
+
+    &::after {
+      width: 268px;
+      height: 112px;
+      top: 135px;
+      right: 28px;
+      left: auto;
+    }
   }
 }
 
