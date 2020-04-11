@@ -162,13 +162,48 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .opportunities-list {
     display: flex;
     justify-content: space-between;
+    margin-top: 50px;
   }
 
   .opportunities-list__item {
     width: 570px;
+    padding-right: 30px;
+  }
+
+  .opportunities-list__title {
+    margin-left: 161px;
+  }
+
+  .opportunities-list__text {
+    margin-top: 74px;
+  }
+
+  .opportunities-list__item::before {
+    width: 100px;
+    height: 100px;
+    top: 47px;
+    left: 52px;
+  }
+
+  .opportunities-list__item--losing-weight::after {
+    width: 70px;
+    height: 97px;
+    left: 66px;
+    top: 41px;
+  }
+
+  .opportunities-list__item--obesity::after {
+    width: 134px;
+    height: 56px;
+    top: 69px;
+    left: 34px;
+  }
+
+  .opportunities-list__link {
+    margin-top: 31px;
   }
 }

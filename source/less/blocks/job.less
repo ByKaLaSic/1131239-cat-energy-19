@@ -118,6 +118,10 @@
 }
 
 @media (min-width: 1300px) {
+  .job {
+    padding-top: 73px;
+  }
+
   .job__list {
     justify-content: space-between;
     padding-top: 80px;
@@ -125,10 +129,25 @@
 
   .job__item {
     width: 245px;
+    margin-top: -8px;
+  }
+
+  .job__item:nth-child(even) {
+    padding-left: 0;
   }
 
   .job__text {
     margin: 0;
     padding: 0;
+    margin-top: 32px;
+    width: 245px;
+  }
+
+  .job__item--boiling-water::before {
+    left: 111px;
+  }
+
+  .job__item--time::before {
+    left: 113px;
   }
 }
