@@ -18,10 +18,15 @@
   display: block;
   height: 24px;
   width: 128px;
+  margin: 0 auto;
 
   &:hover[href],
   &:focus[href] {
     opacity: 0.8;
+  }
+
+  &:active[href] {
+    opacity: 0.6;
   }
 }
 
@@ -78,8 +83,13 @@
 
 .page-footer__logo-wrapper {
   margin: 0;
-  padding-bottom: 27px;
+  padding-bottom: 31px;
   border-bottom: 1px solid #d9d9d9;
+}
+
+.page-footer__icon:hover path
+.page-footer__icon path:focus {
+  fill: #68b738;
 }
 
 @media (min-width: 768px) {
@@ -98,12 +108,7 @@
   }
 
   .page-footer__logo {
-    border-bottom: none;
-    margin-top: 6px;
-    text-align: start;
-    width: 132px;
-    margin-right: 27px;
-    padding: 0;
+    margin: 0;
   }
 
   .page-footer__copyright {
@@ -144,19 +149,20 @@
   .page-footer__wrapper-academy {
     width: 22.88%;
   }
+
+  .page-footer__logo-wrapper {
+    border-bottom: none;
+    margin-top: 6px;
+    margin-right: 31px;
+    padding: 0;
+  }
 }
 
 @media (min-width: 1300px) {
   .page-footer__container {
     .desktop-container(20px 40px);
-    padding-top: 57px;
+    padding-top: 33px;
     padding-bottom: 53px;
-  }
-
-  .page-footer__logo {
-    margin-right: 0;
-    width: 245px;
-    margin-right: -2px;
   }
 
   .page-footer__wrapper-academy {
@@ -170,5 +176,10 @@
 
   .page-footer__wrapper-academy {
     margin-top: 2px;
+  }
+
+  .page-footer__logo-wrapper {
+    margin-right: 0;
+    width: 243px;
   }
 }
