@@ -1,6 +1,7 @@
 .more-product {
+  position: relative;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 79px;
 }
 
 .more-product__liberation {
@@ -8,10 +9,33 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  margin-left: 2px;
 }
 
 .more-product__text {
   font-size: 12px;
   line-height: 16px;
   color: #444444;
+  margin: 0;
+  margin-top: 7px;
+}
+
+.more-product__link {
+  margin-top: 21px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 22px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.more-product--decor::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 26px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url("../img/icon-plus-mobile.svg");
 }
