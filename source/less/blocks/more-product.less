@@ -37,5 +37,43 @@
   top: 26px;
   left: 50%;
   transform: translateX(-50%);
-  background: url("../img/icon-plus-mobile.svg");
+  background: url("../img/icon-plus-mobile.svg") no-repeat;
+}
+
+@media (min-width: 768px) {
+  .more-product--decor::before{
+  width: 60px;
+  height: 60px;
+  top: 55px;
+  background: url("../img/icon-plus.svg") no-repeat;
+  }
+
+  .more-product {
+    padding-top: 164px;
+    background-color: white;
+    border: 1px solid #e6e6e6;
+    padding-left: 37px;
+    padding-top: 163px;
+    padding-bottom: 38px;
+  }
+
+  .more-product__liberation {
+    display: block;
+    font-size: 20px;
+    width: 142px;
+    margin: 0 auto;
+    padding-left: 2px;
+  }
+
+  .more-product__text {
+    font-size: 16px;
+    width: 175px;
+    line-height: 19px;
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+
+  .more-product__link {
+    margin-top: 85px;
+  }
 }
