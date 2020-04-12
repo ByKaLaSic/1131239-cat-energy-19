@@ -87,9 +87,19 @@
   border-bottom: 1px solid #d9d9d9;
 }
 
-.page-footer__icon:hover path
-.page-footer__icon path:focus {
+.page-footer__link:hover path,
+.page-footer__link:focus path,
+.page-footer__link:hover circle,
+.page-footer__link:focus circle,
+.page-footer__html-academy:hover path,
+.page-footer__html-academy:focus path {
   fill: #68b738;
+}
+
+.page-footer__link:active path,
+.page-footer__link:active circle,
+.page-footer__html-academy:active path {
+  fill-opacity: 0.3;
 }
 
 @media (min-width: 768px) {
