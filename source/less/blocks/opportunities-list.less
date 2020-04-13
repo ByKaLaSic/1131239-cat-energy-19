@@ -1,4 +1,5 @@
 .opportunities-list {
+  position: relative;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -13,6 +14,22 @@
   padding-right: 20px;
   position: relative;
   margin-top: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #68b738;
+    border-radius: 50%;
+    top: 24px;
+    left: 22px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+  }
 }
 
 .opportunities-list__title {
@@ -22,12 +39,11 @@
   line-height: 37px;
   text-transform: uppercase;
   margin-left: 71px;
-  padding-right: 10px;
 }
 
 .opportunities-list__text {
   margin: 0;
-  margin-top: 30px;
+  margin-top: 29px;
   color: #444444;
 
   &::after {
@@ -35,14 +51,12 @@
     display: block;
     height: 1px;
     background-color: #d9d9d9;
-    margin-top: 21px;
-    margin-bottom: 19px;
+    margin-top: 22px;
   }
 }
 
 .opportunities-list__link {
   position: relative;
-  display: block;
   .regular-Oswald();
   color: #111111;
   font-size: 16px;
@@ -52,7 +66,7 @@
   &::after {
     content: "";
     position: absolute;
-    margin-top: 3px;
+    top: 7px;
     margin-left: 11px;
     width: 24px;
     height: 11px;
@@ -60,33 +74,157 @@
   }
 }
 
+.opportunities-list__link-wrapper {
+  margin: 0;
+  margin-top: 19px;
+}
+
+.opportunities-list__link:hover::after {
+  background: url("../img/icon-right-arrow-verylong.svg");
+  width: 32px;
+  height: 11px;
+  margin-left: 11px;
+  top: 7px;
+}
+
+.opportunities-list__item--losing-weight::after {
+  width: 35px;
+  height: 49px;
+  background: url("../img/icon-cat-slim.svg") no-repeat;
+  top: 22px;
+  left: 30px;
+}
+
+.opportunities-list__item--obesity::after {
+  width: 67px;
+  height: 28px;
+  background: url("../img/icon-cat-pro.svg") no-repeat;
+  top: 35px;
+  left: 13px;
+}
+
 @media (min-width: 768px) {
   .opportunities-list__title {
     margin: 0;
+    font-size: 36px;
   }
 
   .opportunities-list__item {
-    padding-left: 40px;
-    padding-right: 275px;
+    padding-left: 53px;
+    padding-top: 76px;
+    padding-right: 38.84%;
+    margin-top: 30px;
+
+    &::before {
+      width: 200px;
+      height: 200px;
+      top: 92px;
+      right: 62px;
+      left: auto;
+    }
+  }
+
+  .opportunities-list__item--losing-weight::after {
+    width: 140px;
+    height: 194px;
+    left: auto;
+    top: 80px;
+    right: 92px;
   }
 
   .opportunities-list__link {
-    margin-top: 40px;
-    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 20px;
+
+    &::after {
+      top: 10px;
+      margin-left: 24px;
+    }
+  }
+
+  .opportunities-list__link:hover::after {
+    top: 10px;
+    margin-left: 24px;
+  }
+
+  .opportunities-list__link-wrapper {
+    margin-top: 56px;
+    margin-left: -1px;
+    margin-bottom: 40px;
   }
 
   .opportunities-list__text::after {
     display: none;
   }
+
+  .opportunities-list__text {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 25px;
+    margin-left: -1px;
+  }
+
+  .opportunities-list__item--obesity {
+    padding-right: 44.49%;
+
+    &::before {
+      left: auto;
+      top: 91px;
+      right: 60px;
+    }
+
+    &::after {
+      width: 268px;
+      height: 112px;
+      top: 135px;
+      right: 28px;
+      left: auto;
+    }
+  }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .opportunities-list {
     display: flex;
     justify-content: space-between;
+    margin-top: 50px;
   }
 
   .opportunities-list__item {
     width: 570px;
+    padding-right: 30px;
+  }
+
+  .opportunities-list__title {
+    margin-left: 161px;
+  }
+
+  .opportunities-list__text {
+    margin-top: 74px;
+  }
+
+  .opportunities-list__item::before {
+    width: 100px;
+    height: 100px;
+    top: 47px;
+    left: 52px;
+  }
+
+  .opportunities-list__item--losing-weight::after {
+    width: 70px;
+    height: 97px;
+    left: 66px;
+    top: 41px;
+  }
+
+  .opportunities-list__item--obesity::after {
+    width: 134px;
+    height: 56px;
+    top: 69px;
+    left: 34px;
+  }
+
+  .opportunities-list__link-wrapper {
+    margin-top: 31px;
   }
 }

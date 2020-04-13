@@ -1,6 +1,7 @@
 .food {
   color: #ffffff;
   .regular-Oswald();
+  text-align: center;
 }
 
 .food__wrapper {
@@ -14,7 +15,8 @@
   margin: 0;
   font-size: 36px;
   line-height: 36px;
-  width: 255px;
+  word-wrap: break-word;
+  width: 280px;
   margin-left: 50%;
   transform: translateX(-50%);
 }
@@ -22,9 +24,10 @@
 .food__call {
   text-transform: uppercase;
   margin-top: 23px;
-  width: 225px;
+  width: 260px;
   margin-left: 50%;
   line-height: 18px;
+  padding-right: 1px;
   transform: translateX(-50%);
 }
 
@@ -32,27 +35,31 @@
   margin: 0;
   width: 280px;
   height: 271px;
-  margin-top: -136px;
+  margin-top: -139px;
   margin-left: 50%;
   transform: translateX(-50%);
 }
 
 .food__link {
   margin: 0 20px;
+  margin-top: 3px;
 }
 
 @media (min-width: 768px) {
   .food {
     color: #111111;
     text-align: start;
-    padding-left: 90px;
+    padding-left: 12.28%;
     position: relative;
+    min-height: 834px;
   }
 
   .food__wrapper {
     background-color: white;
     background-image: none;
     margin-left: 0;
+    padding-top: 54px;
+    min-height: 0;
   }
 
   .food__text,
@@ -64,43 +71,63 @@
   .food__text {
     font-size: 60px;
     line-height: 60px;
-    width: 416px;
+    width: 420px;
   }
 
   .food__call {
     font-size: 20px;
     line-height: 20px;
-    width: 284px;
+    width: 385px;
+    margin-top: 41px;
+    padding-left: 1px;
+    margin-bottom: 0;
   }
 
   .food__product {
-    margin-top: -100px;
-    margin-left: 20%;
+    position: absolute;
+    margin: 0;
     transform: none;
+    top: 404px;
+    left: 21.18%;
   }
 
   .food__link {
-    position: absolute;
-    top: 220px;
-    left: 70px;
+    width: 245px;
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 48px;
+    padding-top: 15px;
+    padding-bottom: 17px;
+    margin-left: 2px;
+    padding-left: 16px;
   }
 }
 
 @media (min-width: 1300px) {
   .food {
     padding-left: 80px;
-    display: flex;
+    min-height: auto;
+  }
+
+  .food__wrapper {
+    padding-top: 105px;
+    width: 450px;
+  }
+
+  .food__link {
+    margin-top: 53px;
+    margin-left: 0;
+  }
+
+  .food__call {
+    padding-left: 0;
   }
 
   .food__product {
     margin-top: 0;
-  }
-
-  .food__wrapper {
-    padding-top: 100px;
-  }
-
-  .food__link {
-    top: 300px;
+    left: auto;
+    top: 183px;
+    right: 360px;
   }
 }

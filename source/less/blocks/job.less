@@ -1,6 +1,6 @@
 .job {
   padding-top: 17px;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 
 .job__list {
@@ -10,30 +10,119 @@
 }
 
 .job__text {
+  position: relative;
   margin: 0;
-  margin-left: 28.57%;
+  width: 71.42%;
   margin-top: 30px;
+  margin-bottom: -4px;
   color: #444444;
+  margin-left: 7.14%;
+}
+
+.job__item {
+  display: flex;
+}
+
+.job__image {
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+  margin-top: 28px;
+  margin-bottom: -8px;
+}
+
+.job__image--useful-material {
+  background: #68b738 url("../img/advantage-leaf@1x.png") no-repeat 50% 50%;
+}
+
+.job__image--boiling-water {
+  background: #68b738 url("../img/advantage-powder@1x.png") no-repeat 50% 4px;
+}
+
+.job__image--eating {
+  background: #68b738 url("../img/advantage-dining@1x.png") no-repeat 4px 50%;
+}
+
+.job__image--time {
+  background: #68b738 url("../img/advantage-clock@1x.png") no-repeat 50% 50%;
 }
 
 @media (min-width: 768px) {
+  .job {
+    padding-top: 45px;
+  }
+
   .job__list {
     display: flex;
     flex-wrap: wrap;
   }
 
   .job__item {
+    position: relative;
     width: 50%;
+    flex-direction: column;
+    margin-top: 72px;
+    margin-bottom: 61px;
+
+    &::before {
+      position: absolute;
+      color: #f2f2f2;
+      font-size: 281.07px;
+      line-height: 281.07px;
+      top: -39px;
+      .regular-Oswald();
+    }
+  }
+
+  .job__item--useful-material::before {
+    content: "1";
+    left: 118px;
+  }
+
+  .job__item--boiling-water::before {
+    content: "2";
+    left: 141px;
+  }
+
+  .job__item--eating::before {
+    content: "3";
+    left: 113px;
+  }
+
+  .job__item--time::before {
+    content: "4";
+    left: 143px;
+  }
+
+  .job__item:nth-child(even) {
+    padding-left: 30px;
   }
 
   .job__text {
     margin: 0;
-    margin-top: 80px;
-    padding-right: 150px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 32px;
+    width: 69.2%;
+  }
+
+  .job__text--time {
+    width: 76.2%;
+  }
+
+  .job__image {
+    margin: 0;
+    width: 80px;
+    height: 80px;
+    background-position: 50% 50%;
   }
 }
 
 @media (min-width: 1300px) {
+  .job {
+    padding-top: 73px;
+  }
+
   .job__list {
     justify-content: space-between;
     padding-top: 80px;
@@ -41,10 +130,25 @@
 
   .job__item {
     width: 245px;
+    margin-top: -8px;
+  }
+
+  .job__item:nth-child(even) {
+    padding-left: 0;
   }
 
   .job__text {
     margin: 0;
     padding: 0;
+    margin-top: 32px;
+    width: 245px;
+  }
+
+  .job__item--boiling-water::before {
+    left: 111px;
+  }
+
+  .job__item--time::before {
+    left: 113px;
   }
 }
