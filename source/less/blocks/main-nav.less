@@ -114,16 +114,30 @@
     border-bottom: none;
     padding: 0;
     white-space: nowrap;
-    margin-bottom: 7px;
+    margin-bottom: 20px;
   }
 
   .main-nav__item {
     margin-left: 7.2%;
   }
+
+  .main-nav__item {
+    position: relative;
+  }
+
+  .main-nav__item--current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: #68b738;
+    height: 2px;
+    bottom: 10px;
+  }
 }
 
 @media (min-width: 1300px) {
-  .main-nav__link--cat {
+  .main-nav__item--cat .main-nav__link {
     color: #ffffff;
   }
 
@@ -137,5 +151,9 @@
 
   .main-nav__item {
     margin-left: 34px;
+  }
+
+  .main-nav__item--cat.main-nav__item--current::after {
+    background-color: #ffffff;
   }
 }
