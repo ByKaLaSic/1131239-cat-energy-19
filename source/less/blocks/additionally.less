@@ -10,6 +10,7 @@
   margin-left: 50%;
   transform: translateX(-50%);
   margin-top: 39px;
+  padding-top: 65px;
 }
 
 .additionally__text {
@@ -19,12 +20,11 @@
   margin: 0;
   text-align: center;
   padding: 0 50px;
-  padding-top: 187px;
+  padding-top: 62px;
 }
 
 .additionally__present-wrapper {
   background-color: #6aab43;
-  position: relative;
 }
 
 .additionally__title {
@@ -39,10 +39,8 @@
   background: url("../img/icon-gift.svg") no-repeat;
   width: 55px;
   height: 60px;
-  margin-top: 65px;
-  position: absolute;
-  margin-left: 50%;
-  transform: translateX(-50%);
+  display: block;
+  margin: 0 auto;
   }
 
 
@@ -58,11 +56,10 @@
   }
 
   .additionally__present {
+    display: flex;
     background: url("../img/gift-photo-tablet@1x.jpg") no-repeat;
     width: 708px;
     min-height: 200px;
-    padding-top: 72px;
-    padding-left: 423px;
     margin-top: 69px;
   }
 
@@ -70,11 +67,13 @@
     padding: 0;
     text-align: start;
     width: 165px;
+    margin-left: 277px;
+    margin-top: 7px;
   }
 
   .additionally__present--present::before {
-    top: 0;
-    left: -235px;
+    margin: 0;
+    margin-left: 91px;
   }
 }
 
@@ -84,15 +83,33 @@
     justify-content: space-between;
   }
 
+  .additionally__title {
+    margin-top: 33px;
+    padding-left: 0;
+    border: none;
+  }
+
   .additionally__present {
     margin: 0;
     transform: none;
     width: 245px;
     height: 289px;
     background: url("../img/gift-photo-desktop@1x.jpg") no-repeat;
+    flex-direction: column;
   }
 
   .additionally__present-wrapper {
     background-color: white;
+  }
+
+  .additionally__present--present::before {
+    margin: 0 auto;
+  }
+
+  .additionally__text {
+    margin: 0;
+    text-align: center;
+    margin-top: 62px;
+    margin-left: 39px;
   }
 }
