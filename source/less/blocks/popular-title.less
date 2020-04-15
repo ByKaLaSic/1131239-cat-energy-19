@@ -14,3 +14,25 @@
     margin-left: 22px;
   }
 }
+
+@media (min-width: 768px) {
+  .popular-title {
+    font-size: 36px;
+    line-height: 36px;
+
+    &::after {
+      top: 22px;
+      margin-left: 36px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 3px;
+      width: 10000px;
+      background-color: #68b738;
+      top: 22px;
+      left: -10002px;
+    }
+  }
+}
