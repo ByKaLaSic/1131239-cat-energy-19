@@ -2,16 +2,14 @@
   .regular-Oswald();
   font-size: 24px;
   line-height: 24px;
-  position: relative;
 
   &::after {
     content: "";
-    position: absolute;
+    display:block;
     height: 3px;
-    width: 10000px;
     background-color: #68b738;
-    top: 14px;
-    margin-left: 22px;
+    flex-grow: 1;
+    margin-top: 14px;
   }
 }
 
@@ -20,25 +18,25 @@
     font-size: 36px;
     line-height: 36px;
 
-    &::after {
-      top: 22px;
-      margin-left: 36px;
-    }
+    // &::after {
+    //   top: 22px;
+    //   margin-left: 36px;
+    // }
 
-    &::before {
-      content: "";
-      position: absolute;
-      height: 3px;
-      width: 10000px;
-      background-color: #68b738;
-      top: 22px;
-      left: -10002px;
-    }
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   height: 3px;
+    //   width: 10000px;
+    //   background-color: #68b738;
+    //   top: 22px;
+    //   left: -10002px;
+    // }
   }
 }
 
 @media (min-width: 1300px) {
-  .popular-title::before {
-    left: -10040px;
-  }
+  // .popular-title::before {
+  //   left: -10040px;
+  // }
 }
