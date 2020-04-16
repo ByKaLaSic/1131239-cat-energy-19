@@ -6,17 +6,23 @@
 
 .filter__title {
   font-size: 14px;
-  line-height: 16px;
+  line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
   width: 230px;
   margin: 0;
+  margin-top: 25px;
 }
 
 .filter__fieldset {
   margin: 0;
   padding: 0;
   border: none;
+  padding: 0 20px;
+}
+
+.filter__info {
+  margin-top: 24px;
 }
 
 .filter__legend {
@@ -24,8 +30,8 @@
 }
 
 .filter__label {
-  display: block;
   white-space: nowrap;
+  text-transform: uppercase;
 }
 
 .filter__button {
@@ -42,15 +48,95 @@
 
 .filter__input:not([type="checkbox"]):not([type="radio"]) {
   width: 100%;
+  margin-left: 13px;
+  height: 45px;
+}
+
+.filter__input::placeholder {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #444444;
+  .regular-Oswald();
+}
+
+.filter__input {
+  padding-left: 14px;
+  padding-top: 7px;
+  border: 1px solid #e7e7e7;
 }
 
 .filter__wrapper-input {
   display: flex;
-  margin-top: 10px;
+  margin-top: 14px;
+  align-items: center ;
 }
 
 .filter__textarea {
   width: 100%;
+}
+
+.filter__info {
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 24px;
+}
+
+.filter__need .filter__input {
+  display: none;
+}
+
+.filter__need .filter__radio-item {
+  position: relative;
+  margin-left: 46px;
+  margin-top: 24px;
+}
+
+.filter__need .filter__label::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #d1d1d1;
+  border-radius: 50%;
+  left: -46px;
+  top: -6px;
+}
+
+.filter__need .filter__label::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #68b738;
+  left: -37px;
+  top: 3px;
+  display: none;
+}
+
+.filter__input[type="radio"]:checked + .filter__label::after {
+  display: block;
+}
+
+.filter__need {
+  margin-top: 3px;
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 27px;
+}
+
+.filter__legend {
+  margin: 0;
+  padding: 0;
+  padding-top: 1px;
+}
+
+.filter__radio-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.filter__contacts .filter__legend {
+  margin-top: 1px;
 }
 
 @media (min-width: 768px) {
