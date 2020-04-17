@@ -66,9 +66,8 @@
 
 .filter__input::placeholder {
   text-transform: uppercase;
-  font-size: 16px;
   color: #444444;
-  .regular-Oswald();
+  font: inherit;
 }
 
 .filter__input {
@@ -154,10 +153,6 @@
 
 .filter__legend {
   display: flex;
-}
-
-.filter__span {
-  margin-left: 20px;
 }
 
 .filter__icon-email,
@@ -256,13 +251,35 @@
   display: block;
 }
 
+.filter__legend-wrapper {
+  padding-left: 20px;
+}
+
 @media (min-width: 768px) {
-  .filter__wrapper-checkbox {
-    display: flex;
-    flex-wrap: wrap;
+  .filter {
+    font-size: 20px;
+    line-height: 20px;
   }
 
-  .filter__additionally .filter__label {
+  .page-main__title-form {
+    margin-top: 54px;
+  }
+
+  .filter__title {
+    font-size: 20px;
+    line-height: 30px;
+    width: 330px;
+    margin-top: 55px;
+    margin-left: 40px;
+  }
+
+  .filter__checkbox-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 14px;
+  }
+
+  .filter__checkbox-item {
     width: 50%;
   }
 
@@ -273,6 +290,124 @@
 
   .filter__text {
     text-align: start;
+  }
+
+  .filter__info {
+    margin-top: 45px;
+    border-bottom: none;
+  }
+
+  .filter__wrapper-input {
+    margin-top: 20px;
+  }
+
+  .filter__input:not([type="checkbox"]):not([type="radio"]) {
+    height: 52px;
+    margin-left: 18px;
+  }
+
+  .filter__radio-list {
+    border: 1px solid #e6e6e6;
+    padding-bottom: 35px;
+  }
+
+  .filter__need {
+    margin-top: 49px;
+    border-bottom: none;
+  }
+
+  .filter__need .filter__radio-item {
+    margin-left: 86px;
+    margin-top: 33px;
+  }
+
+  .filter__need .filter__label::before {
+    width: 40px;
+    height: 40px;
+    left: -59px;
+    top: -9px;
+  }
+
+  .filter__need .filter__label::after {
+    width: 18px;
+    height: 18px;
+    left: -48px;
+    top: 2px;
+  }
+
+  .filter__legend-wrapper {
+    padding-left: 0px;
+  }
+
+  .filter__contacts .filter__span {
+    width: 554px;
+  }
+
+  .filter__span {
+    margin-left: 39px;
+  }
+
+  .filter__contacts {
+    margin-top: 47px;
+  }
+
+  .filter__middle-wrapper {
+    margin-top: 75px;
+  }
+
+  .filter__contacts .filter__input {
+    padding-left: 20px;
+  }
+
+  .filter__icon-email::after {
+    top: 21px;
+    right: 19px;
+  }
+
+  .filter__icon-tel::after {
+    top: 18px;
+    right: 16px;
+  }
+
+  .filter__comment {
+    margin-top: 65px;
+  }
+
+  .filter__comment .filter__span {
+    width: 220px;
+  }
+
+  .filter__textarea {
+    margin-top: 76px;
+    min-height: 174px;
+  }
+
+  .filter__additionally {
+    margin-top: 63px;
+  }
+
+  .filter__additionally .filter__span {
+    width: 253px;
+  }
+
+  .filter__checkbox-item {
+    padding-left: 57px;
+    margin-top: 52px;
+  }
+
+  .filter__checkbox-item:nth-child(even) {
+    padding-left: 86px;
+  }
+
+  .filter__additionally .filter__label::before {
+    width: 40px;
+    height: 40px;
+    left: -1px;
+    top: -9px;
+  }
+
+  .filter__checkbox-item:nth-child(even)::before {
+    left: 28px;
   }
 }
 
