@@ -155,14 +155,14 @@
           </div>
           <div class="container">
             <div class="filter__middle-wrapper">
-              <div class="filter__wrapper-input">
+              <div class="filter__wrapper-input filter__icon-email">
                 <label class="filter__label" for="e-mail">
                   E-mail:*
                 </label>
-                <input class="filter__input" type="email" name="e-mail" placeholder="kuklachev@gmail.com"
+                <input class="filter__input filter__e-mail" type="email" name="e-mail" placeholder="kuklachev@gmail.com"
                   aria-label="kuklachev@gmail.com" id="e-mail" required>
               </div>
-              <div class="filter__wrapper-input">
+              <div class="filter__wrapper-input filter__icon-tel">
                 <label class="filter__label" for="tel">
                   Телефон:*
                 </label>
@@ -188,22 +188,32 @@
           </div>
           <div class="container">
             <div class="filter__wrapper-checkbox">
-              <label class="filter__label">
-                <input class="filter__input" type="checkbox" name="sweetener" checked>
-                Сахарозаменитель
-              </label>
-              <label class="filter__label">
-                <input class="filter__input" type="checkbox" name="water">
-                Питьевая вода
-              </label>
-              <label class="filter__label">
-                <input class="filter__input" type="checkbox" name="milk">
-                Молоко
-              </label>
-              <label class="filter__label" for="vitamins">
-                <input class="filter__input" type="checkbox" name="vitamins" id="vitamins">
-                Витамины
-              </label>
+              <ul class="filter__checkbox-list">
+                <li class="filter__checkbox-item">
+                  <input class="filter__input" type="checkbox" name="sweetener" id="sweetener" checked>
+                  <label class="filter__label" for="sweetener">
+                    Сахарозаменитель
+                  </label>
+                </li>
+                <li class="filter__checkbox-item">
+                  <input class="filter__input" type="checkbox" name="water" id="water">
+                  <label class="filter__label" for="water">
+                    Питьевая вода
+                  </label>
+                </li>
+                <li class="filter__checkbox-item">
+                  <input class="filter__input" type="checkbox" name="milk" id="milk">
+                  <label class="filter__label" for="milk">
+                    Молоко
+                  </label>
+                </li>
+                <li class="filter__checkbox-item">
+                  <input class="filter__input" type="checkbox" name="vitamins" id="vitamins">
+                  <label class="filter__label" for="vitamins">
+                    Витамины
+                  </label>
+                </li>
+              </ul>
             </div>
           </div>
         </fieldset>

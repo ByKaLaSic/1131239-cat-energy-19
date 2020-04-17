@@ -4,6 +4,10 @@
   color: #222222;
 }
 
+.filter__form {
+  padding-bottom: 32px;
+}
+
 .filter__title {
   font-size: 14px;
   line-height: 18px;
@@ -37,6 +41,11 @@
 .filter__button {
   border: none;
   width: 100%;
+  margin-top: 39px;
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .filter__text {
@@ -44,6 +53,9 @@
   line-height: 16px;
   color: #444444;
   text-align: center;
+  font-family: "Arial", "Helvetica", sans-serif;
+  margin: 0;
+  margin-top: 21px;
 }
 
 .filter__input:not([type="checkbox"]):not([type="radio"]) {
@@ -60,9 +72,10 @@
 }
 
 .filter__input {
-  padding-left: 14px;
-  padding-top: 7px;
+  padding-left: 15px;
+  padding-top: 2px;
   border: 1px solid #e7e7e7;
+  font: inherit;
 }
 
 .filter__wrapper-input {
@@ -147,6 +160,36 @@
   margin-left: 20px;
 }
 
+.filter__icon-email,
+.filter__icon-tel {
+  position: relative;
+}
+
+.filter__icon-email::after {
+  content: "";
+  position: absolute;
+  background: url("../img/icon-mail.svg") no-repeat;
+  width: 17px;
+  height: 13px;
+  top: 17px;
+  right: 16px;
+}
+
+.filter__icon-tel::after {
+  content: "";
+  position: absolute;
+  background: url("../img/icon-phone.svg") no-repeat;
+  width: 20px;
+  height: 20px;
+  top: 14px;
+  right: 13px;
+}
+
+.filter__contacts .filter__input {
+  padding-left: 12px;
+  padding-right: 40px;
+}
+
 .filter__contacts .filter__span {
   width: 201px;
 }
@@ -161,6 +204,56 @@
 
 .filter__comment .filter__span {
   width: 142px;
+}
+
+.filter__additionally {
+  margin-top: 25px;
+}
+
+.filter__additionally .filter__span {
+  width: 164px;
+}
+
+.filter__checkbox-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+}
+
+.filter__additionally .filter__input {
+  display: none;
+}
+
+.filter__checkbox-item {
+  position: relative;
+  padding-left: 45px;
+  margin-top: 25px;
+}
+
+.filter__additionally .filter__label::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cfcfcf;
+  left: 0;
+  top: -5px;
+}
+
+.filter__additionally .filter__label::after {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 16px;
+  background: url("../img/icon-tick.svg") no-repeat;
+  left: 5px;
+  top: 2px;
+  display: none;
+}
+
+.filter__input[type="checkbox"]:checked + .filter__label::after {
+  display: block;
 }
 
 @media (min-width: 768px) {
