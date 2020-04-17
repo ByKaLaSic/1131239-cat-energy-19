@@ -41,7 +41,7 @@
 .filter__button {
   border: none;
   width: 100%;
-  margin-top: 39px;
+  margin-top: 34px;
   font-size: 16px;
   line-height: 20px;
   padding-top: 10px;
@@ -213,7 +213,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-top: 40px;
+  margin-top: 36px;
 }
 
 .filter__additionally .filter__input {
@@ -222,18 +222,17 @@
 
 .filter__checkbox-item {
   position: relative;
-  padding-left: 45px;
-  margin-top: 25px;
+  margin-top: 12px;
 }
 
 .filter__additionally .filter__label::before {
   content: "";
-  position: absolute;
+  display: inline-block;
   width: 30px;
   height: 30px;
   border: 1px solid #cfcfcf;
-  left: 0;
-  top: -5px;
+  vertical-align: middle;
+  margin-right: 12px;
 }
 
 .filter__additionally .filter__label::after {
@@ -243,7 +242,7 @@
   height: 16px;
   background: url("../img/icon-tick.svg") no-repeat;
   left: 5px;
-  top: 2px;
+  top: 6px;
   display: none;
 }
 
@@ -261,6 +260,10 @@
     line-height: 20px;
   }
 
+  .filter__form {
+    padding-bottom: 72px;
+  }
+
   .page-main__title-form {
     margin-top: 54px;
   }
@@ -276,7 +279,7 @@
   .filter__checkbox-list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 14px;
+    margin-top: 27px;
   }
 
   .filter__checkbox-item {
@@ -391,23 +394,48 @@
   }
 
   .filter__checkbox-item {
-    padding-left: 57px;
-    margin-top: 52px;
+    margin-top: 32px;
   }
 
   .filter__checkbox-item:nth-child(even) {
-    padding-left: 86px;
+    padding-left: 29px;
   }
 
   .filter__additionally .filter__label::before {
     width: 40px;
     height: 40px;
-    left: -1px;
-    top: -9px;
   }
 
-  .filter__checkbox-item:nth-child(even)::before {
-    left: 28px;
+  .filter__additionally .filter__label::after {
+    left: 9px;
+    top: 10px;
+  }
+
+  .filter__checkbox-item:nth-child(even) .filter__label::after {
+    top: 11px;
+    left: 37px;
+  }
+
+  .filter__bottom-wrapper {
+    margin-top: 52px;
+    justify-content: start;
+  }
+
+  .filter__button {
+    width: 283px;
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 15px;
+    padding-bottom: 17px;
+  }
+
+  .filter__text {
+    margin: 0;
+    margin-top: 16px;
+    margin-left: 61px;
+    font-size: 16px;
+    line-height: 16px;
   }
 }
 
@@ -418,6 +446,8 @@
 
   .filter__top-wrapper {
     display: flex;
+    max-width: 1300px;
+    margin: 0 auto;
   }
 
   .filter__info,
@@ -431,5 +461,10 @@
 
   .filter__contacts .filter__wrapper-input {
     width: 50%;
+  }
+
+  .filter__legend-wrapper {
+    margin: 0 auto;
+    max-width: 1300px;
   }
 }
