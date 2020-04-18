@@ -264,10 +264,6 @@
     padding-bottom: 72px;
   }
 
-  .page-main__title-form {
-    margin-top: 54px;
-  }
-
   .filter__title {
     font-size: 20px;
     line-height: 30px;
@@ -440,8 +436,12 @@
 }
 
 @media (min-width: 1300px) {
-  .filter__additionally .filter__label {
-    width: 25%;
+  .filter__additionally .filter__checkbox-item {
+    width: 20.08%;
+  }
+
+  .filter__form {
+    padding-bottom: 82px;
   }
 
   .filter__top-wrapper {
@@ -457,6 +457,7 @@
 
   .filter__middle-wrapper {
     display: flex;
+    justify-content: space-between;
   }
 
   .filter__contacts .filter__wrapper-input {
@@ -466,5 +467,72 @@
   .filter__legend-wrapper {
     margin: 0 auto;
     max-width: 1300px;
+  }
+
+  .filter__need {
+    margin-top: 66px;
+  }
+
+  .filter__title {
+    margin-left: 0;
+  }
+
+  .filter__contacts {
+    margin-top: 41px;
+  }
+
+  .filter__span {
+    margin-left: 9px;
+  }
+
+  .filter__middle-wrapper {
+    margin-top: 55px;
+  }
+
+  .filter__contacts .filter__wrapper-input {
+    width: 570px;
+  }
+
+  .filter__icon-email::after {
+    top: 21px;
+    right: 20px;
+  }
+
+  .filter__icon-tel::after {
+    top: 18px;
+    right: 19px;
+  }
+
+  .filter__comment {
+    margin-top: 67px;
+  }
+
+  .filter__additionally {
+    margin-top: 65px;
+  }
+
+  .filter__checkbox-item:not(:nth-child(4)) {
+    margin-right: 80px;
+  }
+
+  .filter__checkbox-item:nth-child(even) {
+    padding: 0;
+  }
+
+  .filter__checkbox-item:nth-child(even) .filter__label::after {
+    left: 9px;
+    top: 10px;
+  }
+
+  .filter__bottom-wrapper {
+    margin-top: 59px;
+  }
+
+  .filter__button {
+    width: 570px;
+  }
+
+  .filter__text {
+    margin-left: 81px;
   }
 }
