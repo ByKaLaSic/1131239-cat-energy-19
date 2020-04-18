@@ -32,19 +32,39 @@
 }
 
 .contacts__map {
+  position: relative;
   margin: 0;
   width: 320px;
   height: 400px;
   margin-left: 50%;
   transform: translateX(-50%);
   margin-top: -38px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 53px;
+    background: url("../img/map-pin.png") no-repeat;
+    background-size: cover;
+    bottom: 170px;
+    left: 129px;
+  }
+}
+
+.contacts__wrapper-content--color {
+  background-color: #f2f2f2;
 }
 
 @media (min-width: 768px) {
   .contacts__wrapper-content {
     padding: 0px 71px;
-    padding-top: 29px;
+    padding-top: 65px;
     padding-bottom: 57px;
+  }
+
+  .contacts__map {
+    margin-top: -4px;
   }
 
   .contacts__text {
