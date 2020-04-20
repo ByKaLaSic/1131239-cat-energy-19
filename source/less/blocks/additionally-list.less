@@ -4,17 +4,41 @@
   list-style: none;
 }
 
+.additionally-list__item {
+  padding-top: 13px;
+  border-bottom: 1px solid #cdcdcd;
+  padding-bottom: 17px;
+}
+
+.additionally-list__item:first-child {
+  border-top: 1px solid #cdcdcd;
+}
+
 .additionally-list__title {
   .regular-Oswald();
   text-transform: uppercase;
   font-size: 16px;
   line-height: 16px;
+  color: #222222;
+  margin: 0;
 }
 
 .additionally-list__text {
+  display: flex;
   color: #444444;
   font-size: 14px;
   line-height: 14px;
+  margin: 0;
+  margin-top: 13px;
+  justify-content: space-between;
+}
+
+.additionally-list__link {
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 @media (min-width: 768px) {
@@ -24,13 +48,83 @@
   }
 
   .additionally-list__item {
-    padding: 10px 38px;
+    padding: 25px 36px 27px 37px;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  .additionally-list__item:first-child {
+    border-top-color: #e6e6e6;
+  }
+
+  .additionally-list__item:last-child {
+    border-bottom-color: #e6e6e6;
+  }
+
+  .additionally-list__title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .additionally-list__text {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    margin-top: 4px;
+  }
+
+  .additionally-list__link {
+    margin-top: 22px;
+  }
+
+  .additionally-list__price {
+    width: 94px;
+    display: flex;
+    justify-content: flex-end;
   }
 }
 
 @media (min-width: 1300px) {
+  .additionally-list {
+    width: 895px;
+  }
+
   .additionally-list__item {
     display: flex;
-    // justify-content: space-between;
+    padding: 0;
+    border-left: none;
+    border-right: none;
+    margin-top: 0;
+    padding-top: 25px;
+    padding-bottom: 16px;
+    border-color: #cdcdcd;
+  }
+
+  .additionally-list__item:first-child {
+    border-top-color: #cdcdcd;
+  }
+
+  .additionally-list__link {
+    margin: 0;
+    width: 245px;
+    margin-top: -10px;
+  }
+
+  .additionally-list__title {
+    width: 325px;
+  }
+
+  .additionally-list__weight {
+    width: 245px;
+  }
+
+  .additionally-list__price {
+    justify-content: start;
+    width: 80px;
+  }
+
+  .additionally-list__item:last-child {
+    border-color: #cdcdcd;
   }
 }
