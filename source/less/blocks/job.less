@@ -23,28 +23,60 @@
   display: flex;
 }
 
+.job__image--useful-material {
+  background: url("../img/advantage-leaf@1x.png") 50% 50%;
+}
+
+.job__image--boiling-water {
+  background: url("../img/advantage-powder@1x.png") 50% 4px;
+}
+
+.job__image--eating {
+  background: url("../img/advantage-dining@1x.png") 4px 50%;
+}
+
+.job__image--time {
+  background: url("../img/advantage-clock@1x.png") 50% 50%;
+}
+
 .job__image {
   width: 60px;
   height: 60px;
   background-color: #68b738;
   margin-top: 28px;
   margin-bottom: -8px;
+  background-size: 50px 50px;
+  background-color: #68b738;
+  background-repeat: no-repeat;
 }
 
-.job__image--useful-material {
-  background: #68b738 url("../img/advantage-leaf@1x.png") no-repeat 50% 50%;
-}
+@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+  .job__image--useful-material {
+    background: url("../img/advantage-leaf@2x.png") 50% 50%;
+  }
 
-.job__image--boiling-water {
-  background: #68b738 url("../img/advantage-powder@1x.png") no-repeat 50% 4px;
-}
+  .job__image--boiling-water {
+    background: url("../img/advantage-powder@2x.png") 50% 4px;
+  }
 
-.job__image--eating {
-  background: #68b738 url("../img/advantage-dining@1x.png") no-repeat 4px 50%;
-}
+  .job__image--eating {
+    background: url("../img/advantage-dining@2x.png") 4px 50%;
+  }
 
-.job__image--time {
-  background: #68b738 url("../img/advantage-clock@1x.png") no-repeat 50% 50%;
+  .job__image--time {
+    background: url("../img/advantage-clock@2x.png") 50% 50%;
+  }
+
+  .job__image {
+    width: 60px;
+    height: 60px;
+    background-color: #68b738;
+    margin-top: 28px;
+    margin-bottom: -8px;
+    background-size: 50px 50px;
+    background-color: #68b738;
+    background-repeat: no-repeat;
+  }
 }
 
 @media (min-width: 768px) {
