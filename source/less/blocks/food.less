@@ -6,9 +6,18 @@
 
 .food__wrapper {
   padding-top: 27px;
-  background: url("/source/img/index-background-mobile@1x.jpg") no-repeat 50% 0%;
-  background-color: #64a83b;
+  background: #64a83b url("../img/index-background-mobile@1x.jpg") no-repeat 50% 0%;
   min-height: 305px;
+  background-size: 320px auto;
+}
+
+@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+  .food__wrapper {
+    padding-top: 27px;
+    background: #64a83b url("../img/index-background-mobile@2x.jpg") no-repeat 50% 0%;
+    min-height: 305px;
+    background-size: 320px auto;
+  }
 }
 
 .food__text {
@@ -34,7 +43,7 @@
 .food__product {
   margin: 0;
   width: 280px;
-  height: 271px;
+  height: 270px;
   margin-top: -139px;
   margin-left: 50%;
   transform: translateX(-50%);
@@ -42,7 +51,7 @@
 
 .food__link {
   margin: 0 20px;
-  margin-top: 3px;
+  margin-top: 4px;
 }
 
 @media (min-width: 768px) {
@@ -55,7 +64,7 @@
   }
 
   .food__wrapper {
-    background-color: white;
+    background-color: transparent;
     background-image: none;
     margin-left: 0;
     padding-top: 54px;
@@ -87,8 +96,16 @@
     position: absolute;
     margin: 0;
     transform: none;
-    top: 404px;
-    left: 21.18%;
+    top: 255px;
+    right: 0;
+    width: 709px;
+    height: 609px;
+    z-index: -1;
+  }
+
+  .food__product-image {
+    width: 709px;
+    height: 609px;
   }
 
   .food__link {
@@ -126,8 +143,15 @@
 
   .food__product {
     margin-top: 0;
-    left: auto;
-    top: 183px;
-    right: 360px;
+    left: 450px;
+    top: 25px;
+    width: 552px;
+    height: 499px;
+    z-index: 1;
+  }
+
+  .food__product-image {
+    width: 552px;
+    height: 499px;
   }
 }
