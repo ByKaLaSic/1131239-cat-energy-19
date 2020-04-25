@@ -15,11 +15,12 @@
     "gulp-postcss": "8.0.x",
     "gulp-rename": "^2.0.0",
     "gulp-sourcemaps": "2.6.x",
+    "gulp-svgstore": "^7.0.1",
     "gulp-webp": "^4.0.1",
     "imagemin-jpegtran": "^6.0.0",
+    "imagemin-mozjpeg": "^8.0.0",
     "stylelint": "10.1.x",
-    "stylelint-config-htmlacademy": "0.1.x",
-    "imagemin-mozjpeg": "^8.0.0"
+    "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
