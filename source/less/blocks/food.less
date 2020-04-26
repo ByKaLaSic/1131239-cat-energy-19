@@ -2,21 +2,27 @@
   color: #ffffff;
   .regular-Oswald();
   text-align: center;
+  background-image: url(../img/index-background-mobile@1x.jpg),
+    linear-gradient(to bottom,#64a83b 63.5%,#fff 63.5%);
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  background-size: 320px auto, auto;
 }
 
 .food__wrapper {
   padding-top: 27px;
-  background: #64a83b url("../img/index-background-mobile@1x.jpg") no-repeat 50% 0%;
-  min-height: 305px;
-  background-size: 320px auto;
 }
 
 @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-  .food__wrapper {
-    padding-top: 27px;
-    background: #64a83b url("../img/index-background-mobile@2x.jpg") no-repeat 50% 0%;
-    min-height: 305px;
-    background-size: 320px auto;
+  .food {
+    color: #ffffff;
+    .regular-Oswald();
+    text-align: center;
+    background-image: url(../img/index-background-mobile@1x.jpg),
+      linear-gradient(to bottom,#64a83b 63.5%,#fff 63.5%);
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    background-size: 320px auto, auto;
   }
 }
 
@@ -44,7 +50,7 @@
   margin: 0;
   width: 280px;
   height: 270px;
-  margin-top: -139px;
+  margin-top: 26px;
   margin-left: 50%;
   transform: translateX(-50%);
 }
@@ -61,11 +67,11 @@
     padding-left: 12.28%;
     position: relative;
     min-height: 834px;
+    background-image: none;
   }
 
   .food__wrapper {
     background-color: transparent;
-    background-image: none;
     margin-left: 0;
     padding-top: 54px;
     min-height: 0;
