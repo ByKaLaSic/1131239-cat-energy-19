@@ -322,10 +322,20 @@
   .example__was {
     transform: none;
     margin: 0;
-    width: 365px;
-    z-index: 100;
-    overflow: hidden;
-    background: linear-gradient(to top, #f2f2f2, #f2f2f2 327px, #ffffff 327px, #ffffff);
+    width: 690px;
+    position: static;
+    // background: linear-gradient(to top, #f2f2f2, #f2f2f2 327px, #ffffff 327px, #ffffff);
+  }
+
+  .example__width-control::before {
+    content: "";
+    position: absolute;
+    width: 345px;
+    height: 361px;
+    background-color: #eaeaea;
+    z-index: -1;
+    top: 190px;
+    left: 365px;
   }
 
   .example__was-image,
@@ -338,5 +348,16 @@
     transform: none;
     margin: 0;
     width: 690px;
+  }
+
+  .example__width-control {
+    overflow: hidden;
+    height: 517px;
+    width: 365px;
+    position: absolute;
+    top: -190px;
+    left: -40px;
+    z-index: 100;
+    background: linear-gradient(to top, #f2f2f2, #f2f2f2 327px, #ffffff 327px, #ffffff);
   }
 }
