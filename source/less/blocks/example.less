@@ -243,7 +243,7 @@
 
 @media (min-width: 1300px) {
   .example {
-    padding-top: 24px;
+    padding-top: 0;
     padding-bottom: 0;
   }
 
@@ -258,6 +258,7 @@
 
   .example__title {
     padding-bottom: 75px;
+    padding-top: 55px;
   }
 
   .example__description-list {
@@ -324,6 +325,8 @@
     width: 365px;
     z-index: 100;
     overflow: hidden;
+    background: linear-gradient(to right, #f2f2f2 365px, #eaeaea 365px),
+      linear-gradient(to bottom, #ffffff 300px, #f2f2f2 300px);
   }
 
   .example__was-image,
@@ -335,12 +338,6 @@
   .example__become {
     transform: none;
     margin: 0;
-    overflow: hidden;
-    width: 345px;
-    margin-left: 365px;
-  }
-
-  .example__become-image {
-    transform: translateX(-365px);
+    width: 690px;
   }
 }
