@@ -317,20 +317,22 @@
   .example__become {
     top: -190px;
     left: -40px;
+    transform: none;
+    margin: 0;
   }
 
   .example__was {
-    transform: none;
-    margin: 0;
-    width: 690px;
-    position: static;
-    // background: linear-gradient(to top, #f2f2f2, #f2f2f2 327px, #ffffff 327px, #ffffff);
+    width: 365px;
+    position: absolute;
+    background: linear-gradient(to top, #f2f2f2, #f2f2f2 327px, #ffffff 327px, #ffffff);
+    z-index: 100;
+    overflow: hidden;
   }
 
-  .example__width-control::before {
+  .example__was::before {
     content: "";
     position: absolute;
-    width: 345px;
+    width: 325px;
     height: 361px;
     background-color: #eaeaea;
     z-index: -1;
@@ -345,19 +347,6 @@
   }
 
   .example__become {
-    transform: none;
-    margin: 0;
     width: 690px;
-  }
-
-  .example__width-control {
-    overflow: hidden;
-    height: 517px;
-    width: 365px;
-    position: absolute;
-    top: -190px;
-    left: -40px;
-    z-index: 100;
-    background: linear-gradient(to top, #f2f2f2, #f2f2f2 327px, #ffffff 327px, #ffffff);
   }
 }
