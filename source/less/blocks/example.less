@@ -159,9 +159,7 @@
   }
 
   .example__image-infinity {
-    // background: linear-gradient(90deg, #f2f2f2 50%, #eaeaea 50%);
     position: relative;
-    // margin-top: 250px;
     padding-top: 585px;
     padding-bottom: 127px;
   }
@@ -173,16 +171,12 @@
     text-align: center;
     height: 631px;
     top: 81px;
-    // left: 0;
-    // right: 0;
-    // transition: auto;
     margin: auto;
     transform: none;
     padding-left: 7px;
   }
 
   .example__was {
-    // width: 50%;
     background: linear-gradient(to top, #f2f2f2 462px, white 462px);
     z-index: 100;
     width: 50%;
@@ -191,8 +185,6 @@
 
   .example__become {
     display: block;
-    // background: linear-gradient(to top, );
-    // width: 50%;
     background: linear-gradient(to top, #eaeaea 462px, white 462px);
   }
 
@@ -275,7 +267,11 @@
   }
 
   .example__text-infinity {
-    width: 50%;
+    width: 570px;
+  }
+
+  .example__text-infinity .container {
+    padding-right: 0;
   }
 
   .example__title {
@@ -297,10 +293,12 @@
 
   .example__image-infinity {
     margin: 0;
-    width: 50%;
-    padding: 0 40px;
-    min-height: 462px;
+    width: 650px;
+    // width: 50%;
+    // padding: 0 40px;
+    // min-height: 462px;
     padding-top: 335px;
+    // padding-left: 20px;
   }
 
   .example__container {
@@ -328,7 +326,8 @@
   }
 
   .example__range {
-    padding: 0;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .example__image-infinity .container {
@@ -337,32 +336,26 @@
 
   .example__was,
   .example__become {
-    top: -190px;
-    left: -40px;
+    top: -169px;
     transform: none;
     margin: 0;
+    padding-left: 0;
   }
 
   .example__was {
-    width: 365px;
+    width: 50%;
     position: absolute;
-    background: linear-gradient(to top, #f2f2f2, #f2f2f2 327px, #ffffff 327px, #ffffff);
     z-index: 100;
     overflow: hidden;
   }
 
-  // .example__was::before {
-  //   content: "";
-  //   position: absolute;
-  //   width: 325px;
-  //   height: 361px;
-  //   background-color: #eaeaea;
-  //   z-index: -1;
-  //   top: 190px;
-  //   left: 365px;
-  // }
-
   .example__become {
     width: 690px;
+  }
+
+  .example__was-image,
+  .example__become-image {
+    margin: 0;
+    transform: translateX(-40px);
   }
 }
