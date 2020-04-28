@@ -160,8 +160,7 @@
 
   .example__image-infinity {
     position: relative;
-    padding-top: 585px;
-    padding-bottom: 127px;
+    height: 712px;
   }
 
   .example__was,
@@ -179,7 +178,6 @@
   .example__was {
     background: linear-gradient(to top, #f2f2f2 462px, white 462px);
     z-index: 100;
-    width: 50%;
     overflow: hidden;
   }
 
@@ -200,11 +198,13 @@
   .example__range {
     font-size: 20px;
     line-height: 20px;
-    padding-left: 99px;
-    padding-right: 100px;
+    padding: 0;
     position: absolute;
-    width: 100%;
     z-index: 200;
+    bottom: 68px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 570px;
   }
 
   .example__range-inner {
@@ -221,9 +221,11 @@
   }
 
   .example__button {
-    position: relative;
+    position: absolute;
     display: block;
-    margin: -14px auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     border: 1px solid #cecece;
     border-radius: 50%;
     width: 34px;
@@ -294,11 +296,7 @@
   .example__image-infinity {
     margin: 0;
     width: 650px;
-    // width: 50%;
-    // padding: 0 40px;
-    // min-height: 462px;
-    padding-top: 335px;
-    // padding-left: 20px;
+    height: 462px;
   }
 
   .example__container {
@@ -326,8 +324,7 @@
   }
 
   .example__range {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 0;
   }
 
   .example__image-infinity .container {
@@ -336,10 +333,11 @@
 
   .example__was,
   .example__become {
-    top: -169px;
+    top: -190px;
     transform: none;
     margin: 0;
     padding-left: 0;
+    height: 652px;
   }
 
   .example__was {
