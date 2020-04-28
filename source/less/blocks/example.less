@@ -159,31 +159,50 @@
   }
 
   .example__image-infinity {
-    background: linear-gradient(90deg, #f2f2f2 50%, #eaeaea 50%);
+    // background: linear-gradient(90deg, #f2f2f2 50%, #eaeaea 50%);
     position: relative;
-    margin-top: 250px;
-    padding-top: 335px;
+    // margin-top: 250px;
+    padding-top: 585px;
     padding-bottom: 68px;
   }
 
   .example__was,
   .example__become {
     position: absolute;
-    margin-top: 0;
-    width: 690px;
-    height: 517px;
-    top: -169px;
-    left: 7px;
+    // margin-top: 0;
+    width: 100%;
+    text-align: center;
+    height: 630px;
+    top: 84px;
+    // left: 0;
+    // right: 0;
+    // transition: auto;
+    margin: auto;
+    transform: none;
+  }
+
+  .example__was {
+    // width: 50%;
+    background: linear-gradient(to top, #eaeaea 500px, white 500px);
+    z-index: 100;
+    width: 50%;
+    overflow: hidden;
   }
 
   .example__become {
     display: block;
+    // background: linear-gradient(to top, );
+    // width: 50%;
+    background: linear-gradient(to top, #f2f2f2 500px, white 500px);
   }
 
   .example__was-image,
   .example__become-image {
     width: 690px;
     height: 517px;
+    max-width: none;
+    margin-left: 50vw;
+    transform: translateX(-50%);
   }
 
   .example__range {
@@ -191,6 +210,9 @@
     line-height: 20px;
     padding-left: 68px;
     padding-right: 70px;
+    position: absolute;
+    width: 100%;
+    z-index: 200;
   }
 
   .example__range-inner {
@@ -329,22 +351,16 @@
     overflow: hidden;
   }
 
-  .example__was::before {
-    content: "";
-    position: absolute;
-    width: 325px;
-    height: 361px;
-    background-color: #eaeaea;
-    z-index: -1;
-    top: 190px;
-    left: 365px;
-  }
-
-  .example__was-image,
-  .example__become-image {
-    max-width: none;
-    width: 690px;
-  }
+  // .example__was::before {
+  //   content: "";
+  //   position: absolute;
+  //   width: 325px;
+  //   height: 361px;
+  //   background-color: #eaeaea;
+  //   z-index: -1;
+  //   top: 190px;
+  //   left: 365px;
+  // }
 
   .example__become {
     width: 690px;
