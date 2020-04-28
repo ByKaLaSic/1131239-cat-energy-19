@@ -1,5 +1,6 @@
 .contacts {
   background-color: #dcdcdc;
+  position: relative;
 }
 
 .contacts__text {
@@ -56,6 +57,13 @@
   background-color: #f2f2f2;
 }
 
+.contacts__interactive-map {
+  position: absolute;
+  height: 362px;
+  width: 100%;
+  top: 114px;
+}
+
 @media (min-width: 768px) {
   .contacts__wrapper-content {
     padding: 0 71px;
@@ -74,6 +82,11 @@
     height: 106px;
     bottom: 144px;
     left: 321px;
+  }
+
+  .contacts__interactive-map {
+    height: 396px;
+    top: 201px;
   }
 
   .contacts__map-image {
@@ -123,6 +136,12 @@
     bottom: 144px;
     left: auto;
     right: 329px;
+  }
+
+  .contacts__interactive-map {
+    height: 400px;
+    top: 0;
+    z-index: 100;
   }
 
   .contacts__map-image {
