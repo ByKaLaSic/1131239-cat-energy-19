@@ -83,10 +83,10 @@
   border: 2px solid #444444;
 }
 
-.filter__input:required,
-.filter__textarea:required {
-  border: 2px solid #ff8282;
-}
+// .filter__input:invalid,
+// .filter__textarea:invalid {
+//   border: 2px solid #ff8282;
+// }
 
 .filter__wrapper-input {
   display: flex;
@@ -139,6 +139,15 @@
   left: -37px;
   top: 3px;
   display: none;
+}
+
+.filter__need .filter__label:hover::before {
+  border-color: #bfbfbf;
+}
+
+.filter__need .filter__label:active::before,
+.filter__need .filter__label:active::after {
+  opacity: 0.3;
 }
 
 .filter__radio:checked + .filter__label::after {
@@ -229,6 +238,18 @@
 
 .filter__checkbox:checked + .filter__label::after {
   display: block;
+}
+
+.filter__checkbox + .filter__label:hover::before {
+  border-color: #bababa;
+}
+
+.filter__checkbox + .filter__label:active::before {
+  border-color: rgba(205, 205, 205, 0.3);
+}
+
+.filter__checkbox:checked + .filter__label:active::after {
+  opacity: 0.3;
 }
 
 @media (min-width: 768px) {
