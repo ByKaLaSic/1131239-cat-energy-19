@@ -21,7 +21,12 @@ navToggle.addEventListener('click', function () {
 
 if (filter) {
   var addTheNecessaryHandler = function (required) {
-    required.classList.add('.filter__input-invalid');
+    filter.addEventListener('submit', function (evt) {
+      if (!required.value) {
+        evt.preventDefault();
+        required.classList.add('filter__input-invalid');
+      }
+    });
   };
 
   for (var i = 0; i < requireds.length; i++) {
