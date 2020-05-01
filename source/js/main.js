@@ -19,14 +19,12 @@ navToggle.addEventListener('click', function () {
   }
 });
 
-var addTheNecessaryHandler = function (required) {
-  if (filter) {
-    required.addEventListener('input invalid', function () {
-      required.classList.add('.filter__input-invalid');
-    });
-  }
-};
+if (filter) {
+  var addTheNecessaryHandler = function (required) {
+    required.classList.add('.filter__input-invalid');
+  };
 
-for (var i = 0; i < requireds.length; i++) {
-  addTheNecessaryHandler(requireds[i]);
-};
+  for (var i = 0; i < requireds.length; i++) {
+    addTheNecessaryHandler(requireds[i]);
+  };
+}
