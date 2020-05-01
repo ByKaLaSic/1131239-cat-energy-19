@@ -70,6 +70,22 @@
   padding-top: 2px;
   border: 1px solid #e7e7e7;
   font: inherit;
+  outline: none;
+}
+
+.filter__input:hover,
+.filter__textarea:hover {
+  border-color: #cdcdcd;
+}
+
+.filter__input:focus,
+.filter__textarea:focus {
+  border: 2px solid #444444;
+}
+
+.filter__input:required,
+.filter__textarea:required {
+  border: 2px solid #ff8282;
 }
 
 .filter__wrapper-input {
@@ -89,6 +105,7 @@
   padding-top: 12px;
   padding-left: 14px;
   color: #444444;
+  outline: none;
 }
 
 .filter__textarea::placeholder {

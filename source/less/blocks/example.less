@@ -108,6 +108,21 @@
   max-width: none;
 }
 
+.example__left-range:hover,
+.example__right-range:hover {
+  border-bottom-style: solid;
+}
+
+.example__left-range:active,
+.example__right-range:active {
+  border: none;
+}
+
+.example__left-range,
+.example__right-range {
+  cursor: pointer;
+}
+
 @media (min-width: 768px) {
   .example {
     background-color: white;
@@ -238,6 +253,16 @@
     height: 34px;
     background-color: white;
     box-shadow: 0 2px 5px 0 rgba(000, 000, 000, 0.15);
+    cursor: pointer;
+  }
+
+  .example__button:hover {
+    box-shadow: 0 3px 5px 0 rgba(000, 000, 000, 0.25);
+  }
+
+  .example__button:active {
+    box-shadow: 0 4px 5px 0 rgba(000, 000, 000, 0.3);
+    border: 2px solid #68b738;
   }
 
   .example__button::before {
