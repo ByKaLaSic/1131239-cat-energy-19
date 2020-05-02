@@ -6,7 +6,6 @@ if (filter) {
   var requireds = filter.querySelectorAll('input[required]');
 }
 
-
 navMain.classList.remove('main-nav--nojs');
 
 navToggle.addEventListener('click', function () {
