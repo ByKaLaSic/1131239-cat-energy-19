@@ -153,15 +153,21 @@
 }
 
 @media (min-width: 1300px) {
+  .product-list {
+    margin-right: -40px;
+    margin-left: -40px;
+  }
+
   .product-list__item {
     width: 245px;
     padding-right: 39px;
     margin-top: 143px;
-    margin-right: 0;
+    margin-right: 40px;
+    margin-left: 40px;
   }
 
-  .product-list__item:not(:nth-child(4n)) {
-    margin-right: 80px;
+  .product-list__item:not(:nth-child(even)) {
+    margin-right: 40px;
   }
 
   .product-list__product {
