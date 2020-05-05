@@ -2,10 +2,6 @@ var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
 var filter = document.querySelector('.filter__form');
 
-if (filter) {
-  var requireds = filter.querySelectorAll('input[required]');
-}
-
 navMain.classList.remove('main-nav--nojs');
 
 navToggle.addEventListener('click', function () {
@@ -17,18 +13,3 @@ navToggle.addEventListener('click', function () {
     navMain.classList.remove('main-nav--opened');
   }
 });
-
-if (filter) {
-  var addTheNecessaryHandler = function (required) {
-    filter.addEventListener('submit', function (evt) {
-      if (!required.value) {
-        evt.preventDefault();
-        required.classList.add('filter__input-invalid');
-      }
-    });
-  };
-
-  for (var i = 0; i < requireds.length; i++) {
-    addTheNecessaryHandler(requireds[i]);
-  };
-}
