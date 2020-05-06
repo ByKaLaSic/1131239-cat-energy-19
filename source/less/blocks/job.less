@@ -90,11 +90,12 @@
   .job__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .job__item {
     position: relative;
-    width: 50%;
+    width: calc(50% - 30px);
     flex-direction: column;
     margin-top: 54px;
     padding-bottom: 51px;
@@ -111,27 +112,8 @@
       z-index: -1;
       counter-increment: section;
       content: "" counter(section);
+      left: 115px;
     }
-  }
-
-  .job__item--useful-material::after {
-    left: 118px;
-  }
-
-  .job__item--boiling-water::after {
-    left: 141px;
-  }
-
-  .job__item--eating::after {
-    left: 113px;
-  }
-
-  .job__item--time::after {
-    left: 143px;
-  }
-
-  .job__item:nth-child(even) {
-    padding-left: 30px;
   }
 
   .job__text {
@@ -182,13 +164,5 @@
     padding: 0;
     margin-top: 32px;
     width: 245px;
-  }
-
-  .job__item--boiling-water::after {
-    left: 111px;
-  }
-
-  .job__item--time::after {
-    left: 113px;
   }
 }
