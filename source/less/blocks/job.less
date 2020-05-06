@@ -84,6 +84,7 @@
     padding-top: 45px;
     padding-bottom: 23px;
     border-bottom: 1px solid #e6e6e6;
+    counter-reset: section;
   }
 
   .job__list {
@@ -108,26 +109,24 @@
       top: -39px;
       .regular-Oswald();
       z-index: -1;
+      counter-increment: section;
+      content: "" counter(section);
     }
   }
 
   .job__item--useful-material::after {
-    content: "1";
     left: 118px;
   }
 
   .job__item--boiling-water::after {
-    content: "2";
     left: 141px;
   }
 
   .job__item--eating::after {
-    content: "3";
     left: 113px;
   }
 
   .job__item--time::after {
-    content: "4";
     left: 143px;
   }
 
