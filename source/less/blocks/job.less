@@ -100,32 +100,33 @@
     margin-bottom: 15px;
     align-items: flex-start;
 
-    &::before {
+    &::after {
       position: absolute;
       color: #f2f2f2;
       font-size: 281.07px;
       line-height: 281.07px;
       top: -39px;
       .regular-Oswald();
+      z-index: -1;
     }
   }
 
-  .job__item--useful-material::before {
+  .job__item--useful-material::after {
     content: "1";
     left: 118px;
   }
 
-  .job__item--boiling-water::before {
+  .job__item--boiling-water::after {
     content: "2";
     left: 141px;
   }
 
-  .job__item--eating::before {
+  .job__item--eating::after {
     content: "3";
     left: 113px;
   }
 
-  .job__item--time::before {
+  .job__item--time::after {
     content: "4";
     left: 143px;
   }
@@ -146,7 +147,7 @@
     width: 76.2%;
   }
 
-  .job__image {
+  .job__item::before {
     margin: 0;
     width: 80px;
     height: 80px;
@@ -184,11 +185,11 @@
     width: 245px;
   }
 
-  .job__item--boiling-water::before {
+  .job__item--boiling-water::after {
     left: 111px;
   }
 
-  .job__item--time::before {
+  .job__item--time::after {
     left: 113px;
   }
 }
